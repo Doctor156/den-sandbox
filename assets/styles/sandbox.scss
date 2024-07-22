@@ -1,0 +1,39 @@
+@import "vars";
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 3%;
+  margin-left: 10%;
+  font-size: 18px;
+  /* Кейсы должны быть светлее */
+}
+
+.title {
+  font-size: $fs-xxl;
+  color: white;
+}
+
+.buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 65px;
+
+  //margin-left: 10%;
+  //margin-top: 3%; todo Нельзя использовать в отступах em, особенно вот тут приводит к чудовищным последстиям
+  //grid-template-columns: 1fr 1fr 2fr 250px;
+  //column-gap: 10%;
+
+  &__button {
+    border-radius: 7px;
+    background: $color-darker-gray;
+    padding: 10px 30px;
+    font-size: $fs-l;
+    color: $color-white;
+
+    //font-family: "FiraSans";
+    //color: white;
+    //height: 6em; // todo не надо
+  }
+}
